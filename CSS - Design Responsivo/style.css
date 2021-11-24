@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color: thistle;
+}
+
+@media only screen and (min-width: 320px) {
+    .my-box{
+        width: 90%;
+        height: 400px;
+        background-color: rgb(180, 175, 231);
+        display: block;
+        margin: 60px auto;
+        text-align: center;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    .my-box h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color:blue;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    /* Apenas preencho aqui as propriedades que quero mudar, pois elas puxam as prop acima */
+    .my-box{
+        width: 50%;
+        background-color: purple;
+    }
+    .my-box h1{
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .my-box{
+        width: 30%;
+        background-color: rgb(142, 211, 238);
+    }
+    .my-box h1{
+        color: gray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+

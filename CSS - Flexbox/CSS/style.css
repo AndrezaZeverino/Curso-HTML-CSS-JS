@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+.my-container {
+    display: flex;
+    width: 80%;
+    height: 600px;
+    margin: 60px auto;
+    background-color: #8a00cf;
+    border-radius: 8px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* flex-wrap: wrap; serve para quebrar a linha */
+    /* ao invés de colocar a linha do flex direction e flex wrap, posso colocar conforme abaixo */
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    /* justify content tem várias formas de ser usado. Adiciona espaços na horizontal */
+    align-items: center;
+    align-content: center;
+    /* align-content: adiciona os espaços na vertical */
+}
+
+.my-item {
+    height: 50px;
+    background-color: #21f8bb;
+    border-radius: 8px;
+    padding: 30px;
+    border: 4px solid #fff;
+    /* flex-basis: 300%; */
+    /* flex-basis: é como se fosse uma largura padrão do item dentro da box - flexbox*/
+}
+
+/* ORDER */
+/* Order reordena a ordem dos elementos. se quisesse ordenar os itens, colocaria a classe que consta aqui */
+.order-1{
+    order: 1;
+}
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 3;
+}
+.order-4{
+    order: 4;
+}
+
+/* FLEX GROW */
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-5 {
+    flex-grow: 5;
+}
+
+/* SHRINK */
+/* Para usar o Shrink, os elementos precisam ser maior que o container  */
+/* serve para encolher o elemento, quanto maior o número, mais encolhe */
+.shrink-1 {
+    flex-shrink: 1;
+}
+
+.shrink-5 {
+    flex-shrink: 5;
+}
+
+/* ALIGN SELF */
+/* uso para mover apenas um dos elementos */
+.self-top{
+    align-self:flex-start;
+}

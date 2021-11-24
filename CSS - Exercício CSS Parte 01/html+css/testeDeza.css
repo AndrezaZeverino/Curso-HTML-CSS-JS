@@ -1,0 +1,55 @@
+body {
+    background-color: #f3f4f5;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: pink;
+    display: block;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+main{
+    width: 1000px;
+    display: table;
+    /* o table gera a altura conforme a quantidade de elementos que tem na tela  */
+    background-color: powderblue;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.box-container{
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: table;
+    /* o table gera a altura conforme a quantidade de elementos que tem na tela  */
+    float: left;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    display: block;
+    /* sempre que o display for block, preciso declarar uma height(altura) */
+    background-color: plum;
+    border-radius: 10px;
+    border: 4px solid #9013fe;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 300px;
+    height: 45px;
+    background-color: #9013fe;
+    border-radius: 4px;
+    display: block;
+    margin-top: 25px;
+    float: left;
+}

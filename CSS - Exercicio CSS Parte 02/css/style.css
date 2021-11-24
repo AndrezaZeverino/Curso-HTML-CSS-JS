@@ -1,0 +1,107 @@
+body {
+    background-color: #f2f4f5;
+    margin: 0;
+}
+
+main {
+    width: 75%;
+    display: table;
+    margin: 100px auto 0 auto;
+    /* essa ordem da margin segue o sentido horário: top, right, bottom e left */
+}
+
+/* CARDS */
+
+.card-container {
+    width: 270px; 
+    display: table; 
+    /* table: altura dinâmica */
+    float: left;
+    /* float: left; coloco assim para um card ficar ao lado do outro*/
+    margin: 60px 60px 0 0;
+}
+
+.card {
+    width: 100%;
+    display: table;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 8px 8px 12px (0,0,0,0.05);
+    padding: 15px;
+    box-sizing: border-box;
+    /* border-box coloca as medidas para dentro */
+}
+
+.card .card-image{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    /* coloco display block na imagem para que não gere uma margin. Se for em topo de post, colocar inline-block */
+}
+
+.card .card-image-gato3{
+    margin-top: -55px;
+}
+
+.card .card-body {
+    width: 100%;
+    display: table;
+    margin-top: 12px;
+}
+
+.card .card-body h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 24px;
+    /* line-height: é o tamanho da linha */
+    color: #9013fe;
+    margin: 0;
+}
+
+.card .card-body p{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+        /* line-height: é o tamanho da linha */
+    color: #4a4a4a;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+.card .card-footer {
+    width: 100%;
+    display: table;
+
+}
+
+.card .card-footer .btn{
+    width: 100%;
+
+
+}
+/* BOTÕES */
+
+.btn{
+    width: auto;
+    height: 40px;
+    display: inline-block;
+    background-color: #39e493;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    /* text-transform: uppercase; deixa as letras maiúsculas */
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    /* text-decoration: none; coloco essa propriedade para sair o sublinhado do link */
+    margin-top: 12px;
+    padding: 0 30px; 
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
