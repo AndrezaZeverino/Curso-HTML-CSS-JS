@@ -1,0 +1,35 @@
+@keyframes dashAnim {
+    from {
+        stroke-dasharray: 10;
+        stroke-dashoffset: 5;
+    }
+    to {
+        stroke-dasharray: 10;
+        stroke-dashoffset: 500;
+        /* stroke-dashoffset: 500; velocidade do movimento da animação */
+    }
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Essa parte tirei de dentro da imagem SVG, se tivesse 10 imagens, traria as infos das 10 pra cá */
+/* pelo motivo acima eu preciso por a seguinte info no arquivo svg: <?xml-stylesheet type="text/css" href="../style.css" ?>  */
+.st0 {
+    fill: none;
+    stroke: #e650de;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 10;
+    /* stroke-dasharray: 10; deixa a imagem com traços */
+    stroke-dashoffset: 20;
+    animation: dashAnim 5s linear infinite;
+}
+
+/* Existe uma documentação para SVG, lá consigo ver o que posso mudar no estilo das imagens */
+/* SVG: Scalable Vector Graphics */
